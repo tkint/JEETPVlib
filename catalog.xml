@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
     <system systemId="file:/D:/tkint/Documents/NetBeansProjects/TP01/carto.xsd" uri="src/conf/xml-resources/jaxb/Test01/carto.xsd"/>
+    <system systemId="file:/D:/tkint/Documents/NetBeansProjects/TP01/vlib.xsd" uri="src/conf/xml-resources/jaxb/test/vlib.xsd"/>
 </catalog>

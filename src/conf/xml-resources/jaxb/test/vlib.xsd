@@ -1,0 +1,65 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="carto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="markers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="marker" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="name" use="optional"/>
+                      <xs:attribute type="xs:short" name="number" use="optional"/>
+                      <xs:attribute type="xs:string" name="address" use="optional"/>
+                      <xs:attribute type="xs:string" name="fullAddress" use="optional"/>
+                      <xs:attribute type="xs:float" name="lat" use="optional"/>
+                      <xs:attribute type="xs:float" name="lng" use="optional"/>
+                      <xs:attribute type="xs:byte" name="open" use="optional"/>
+                      <xs:attribute type="xs:byte" name="bonus" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="arrondissements">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="arrondissement" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:byte" name="number" use="optional"/>
+                      <xs:attribute type="xs:float" name="minLat" use="optional"/>
+                      <xs:attribute type="xs:float" name="minLng" use="optional"/>
+                      <xs:attribute type="xs:float" name="maxLat" use="optional"/>
+                      <xs:attribute type="xs:float" name="maxLng" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+ 
+  <xs:element name="station">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:byte" name="available"/>
+        <xs:element type="xs:byte" name="free"/>
+        <xs:element type="xs:byte" name="total"/>
+        <xs:element type="xs:byte" name="ticket"/>
+        <xs:element type="xs:byte" name="open"/>
+        <xs:element type="xs:int" name="updated"/>
+        <xs:element type="xs:byte" name="connected"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

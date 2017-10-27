@@ -9,16 +9,14 @@
     </xsd:element>
 
     <xsd:complexType name="marker">
-        <xsd:sequence>
-            <xsd:element name="name" type="xsd:string"></xsd:element>
-            <xsd:element name="number" type="xsd:int"></xsd:element>
-            <xsd:element name="address" type="xsd:string"></xsd:element>
-            <xsd:element name="fullAddress" type="xsd:string"></xsd:element>
-            <xsd:element name="lat" type="xsd:float"></xsd:element>
-            <xsd:element name="lng" type="xsd:float"></xsd:element>
-            <xsd:element name="open" type="xsd:int"></xsd:element>
-            <xsd:element name="bonus" type="xsd:int"></xsd:element>
-        </xsd:sequence>
+        <xsd:attribute name="name" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="number" type="xsd:int"></xsd:attribute>
+        <xsd:attribute name="address" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="fullAddress" type="xsd:string"></xsd:attribute>
+        <xsd:attribute name="lat" type="xsd:float"></xsd:attribute>
+        <xsd:attribute name="lng" type="xsd:float"></xsd:attribute>
+        <xsd:attribute name="open" type="xsd:int"></xsd:attribute>
+        <xsd:attribute name="bonus" type="xsd:int"></xsd:attribute>
     </xsd:complexType>
     
     <xsd:complexType name="arrondissement">

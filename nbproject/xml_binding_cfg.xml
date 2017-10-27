@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <schemas xmlns='http://xml.netbeans.org/schema/JAXBWizConfig' destdir='build/generated-sources/jaxb' projectName='TP01' version='1.0'>
-	<schema type='-xmlschema' package='' name='Test01'>
+	<schema type='-xmlschema' package='' name='test'>
 		<xjc-options>
 		</xjc-options>
 		<schema-sources>
-			<schema-source location='src/conf/xml-resources/jaxb/Test01/carto.xsd' origLocation='carto.xsd'/>
+			<schema-source location='src/conf/xml-resources/jaxb/test/vlib.xsd' origLocation='vlib.xsd'/>
 		</schema-sources>
 		<bindings>
 		</bindings>
